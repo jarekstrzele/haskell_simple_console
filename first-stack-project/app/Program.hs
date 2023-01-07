@@ -1,2 +1,4 @@
 main :: IO ()
-main = putStrLn "Hello world"
+main = do 
+    content <- readFile "./nums.txt"
+    print content
