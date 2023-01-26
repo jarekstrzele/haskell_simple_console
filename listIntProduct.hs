@@ -21,5 +21,14 @@ prod (x:xs) = x * prod xs
 prod1 :: [Int]->Int
 -- prod1 x = foldl (*) 1 x 
 prod1 = foldl (*) 1
+------------------------------------------------------
+-- prodEvens :: [Int]->Int
+-- prodEvens x:xs 
+--     | (x `mod` 2 == 0) = foldl (*) 1 x 
+--     | otherwise  prodEvens xs 
+
+-- filter even [2,1,4,6,7] -> [2,4,6]
+-- f . g = f( g(x) )
+prodEvens = prod1 . filter even  -- equvalate prodEvens l = prod1 (filter even l)
 
 
