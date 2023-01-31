@@ -1,0 +1,3 @@
+Hello world!!!
+Polskie naki ¾«†©¢ä
+end of the file
