@@ -1,0 +1,1 @@
+sum' = foldl (\acc curr -> acc + curr) 0
